@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  background-color: rgb(210, 224, 251);
+}
+.navigation{
+  height: 100px;
+  border-bottom: 1px solid rgb(77, 76, 90);
+}
+.navigation-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  font-weight: 600;
+}
+.navigation-links ul{
+  list-style: none;
+}
+.navigation-links ul li{
+  display: inline;
+  line-height: 2em;
+  padding: 20px 40px;
+  color: rgb(36, 62, 63);
+  cursor: pointer;
+}
+.navigation-links ul li:hover{
+  color: rgb(7, 170, 224);
+}
+.nav-btn{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.nav-btn:hover{
+  background-color: rgb(118, 139, 132);
+}
+.navigation-links img{
+  height: 70px;
+  width: 150px;
+  margin-right: 200px;
+  mix-blend-mode: multiply;
+}
+.welcome{
+  display: flex;
+  gap: 40px;
+  background-color: rgb(210, 224, 251);
+  padding: 60px;
+}
+.message{
+  width: 50%;
+}
+.message h1{
+  padding: 5px;
+  margin-top: 50px;
+}
+.message p{
+  padding: 5px;
+  margin-top: 10px;
+  
+}
+.welcome-img{
+  margin-left: 40px;
+}
+.welcome-img img{
+  height: 350px;
+  width: 400px;
+}
+.welcome-img p{
+  padding: 30px;
+  background-color: rgb(173, 186, 216);
+  position: absolute;
+  right: 35%;
+  margin-top: 10px;
+  
+}
+.learn {
+  padding: 10px;
+  border-radius: 50px;
+  
+}
+.contact{
+  padding: 10px;
+  border-radius: 50px;
+  margin-left: 100px;
+}
+.courses{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 20px;
+}
+.card{
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  margin: 20px;
+  width: 300px;
+  border-radius: 40px;
+}
+
+.course-btn{
+  padding: 10px 20px;
+  border:none;
+  border-radius: 30px;
+}
+.Card-icon{
+  height: 100px;
+  margin-left: 25%;
+  margin-bottom: 20px;
+
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  align-items: center;
+}
+.course-content{
+  height: 150px;
+  margin-top: 20px;
+}
+.course-head{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-us{
+  text-align: center;
+  margin-top: 10px;
+}
