@@ -1,21 +1,21 @@
-import './App.css'
-import Curriculum from './Components/Curriculum';
-import Navbar from './Components/Navbar';
-import Welcome from './Components/welcome';
-import Contact from './Components/contact';
+import "./App.css";
+import Curriculum from "./Components/Curriculum";
+import Home from "./Components/Home";
+import Navbar from "./Components/Navbar";
+
+import Contact from "./Components/contact";
 
 function App() {
   return (
     <>
-      <div className='App'>
-        <Navbar/>
-        <Welcome/>
-        <Curriculum/>
-        <Contact/>
-
+      <div className="App">
+        <Navbar />
+        <Home />
+        <Curriculum />
+        <Contact />
       </div>
     </>
-  )
+  );
 }
 
 export default App;
