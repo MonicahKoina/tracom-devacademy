@@ -1,9 +1,12 @@
 import React from 'react'
 
-function Signup() {
+function Contact() {
   return (
-    <form action="/">
-        <ul>
+   <div className="contact-us">
+    <h1>Contact Us</h1>
+    <div className="contact-form">
+    <form action="/" className='contact-form'>
+    <ul>
           <input type="text" placeholder="Full name" />
           <input type="text" placeholder="Email" />
           <input type="text" placeholder="Type your message" />
@@ -12,7 +15,9 @@ function Signup() {
           <button class="btn">Send</button>
         </div>
     </form>
+    </div>
+   </div>
   )
 }
 
-export default Signup
+export default Contact
