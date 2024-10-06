@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="navigation-links">
         <img src={logo} alt="tracom" />
             <ul>
-                <li><Link to='/'>Welcome</Link></li>
+                <li><Link to='/'>Home</Link></li>
                 <li><Link to={'/curriculum'}>Curriculum</Link></li>
                 <li>Benefits</li>
                 <li><Link to={'/contact'}>Contact</Link></li>

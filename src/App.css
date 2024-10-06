@@ -3,12 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-.App{
+body{
   background-color: rgb(210, 224, 251);
 }
 .navigation{
   height: 100px;
   border-bottom: 1px solid rgb(77, 76, 90);
+  background-color: rgb(210, 224, 251);
+  
 }
 .navigation-links{
   display: flex;
@@ -51,6 +53,7 @@
   gap: 40px;
   background-color: rgb(210, 224, 251);
   padding: 60px;
+  height: 100vh;
 }
 .message{
   width: 50%;
@@ -84,16 +87,23 @@
   border-radius: 50px;
   
 }
+
 .contact{
   padding: 10px;
   border-radius: 50px;
   margin-left: 100px;
+}
+.course-head{
+  padding: 20px;
+  
 }
 .courses{
   display: flex;
   /* justify-content: center; */
   align-items: center;
   margin: 20px;
+  background-color: rgb(210, 224, 251);
+  height: 80vh;
 }
 .card{
   padding: 20px;
@@ -130,5 +140,70 @@
 }
 .contact-us{
   text-align: center;
+  padding: 20px;
+  background-color: rgb(210, 224, 251);
+  height: 80vh;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: 32%;
+}
+input {
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 20px;
+  margin-top: 20px;
+  border: none;
+}
+.sign-in {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+  margin-left: 35%;
   margin-top: 10px;
+  margin-bottom: 40px;
+
+}
+h1 {
+  margin-bottom: 10px;
+}
+p {
+  margin-bottom: 20px;
+  color: #666;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.log-in-btns {
+  margin-top: 20px;
+}
+.signin-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+h5 {
+  margin: 10px 0;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
 }

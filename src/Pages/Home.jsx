@@ -1,6 +1,6 @@
 import React from "react";
 import profile1 from '../assets/trcm.jpeg'
-const Welcome = () => {
+const Home = () => {
     return ( 
         <div className="welcome">
             <div className="message">
@@ -16,4 +16,4 @@ const Welcome = () => {
      );
 }
  
-export default Welcome;
+export default Home;

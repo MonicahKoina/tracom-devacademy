@@ -34,8 +34,7 @@ const Curriculum = () => {
   return (
     <>
     <div className="course-head">
-      < h1 >Our curriculum</h1>
-       </div>
+      < h1 >Courses offered</h1>
       <div className="courses">
         {Cards.map((card, index) => {
           return(
@@ -51,6 +50,7 @@ const Curriculum = () => {
           </div>
           );
         })}
+      </div>
       </div>
     </>
   );

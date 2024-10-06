@@ -43,10 +43,9 @@ function Login() {
             checked={remember}
             onChange={() => setRemember(!remember)}
           />
-          Remember me
+          <p>Remember me</p>
         </label>
 
-        <span>Forgot Password?</span>
 
         <div className="log-in-btns">
           <button className="signin-btn">Sign In</button>
