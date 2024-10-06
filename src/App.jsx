@@ -1,20 +1,27 @@
-import React from 'react'
-import './App.css'
-import Layout from './Components/Layout'
-import Welcome from './Pages/Welcome'
-import Curriculum from './Pages/Curriculum'
-import Contact from './Pages/Contact'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import Layout from './Components/Layout';
+import Welcome from './pages/Welcome';
+import Curriculum from './pages/Curriculum';
+import Contact from './Pages/Contact';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
 
 
-function App() {
-  return (
-    <div className="App">
-      <Layout/>
-      <Welcome/>
-      <Curriculum/>
-      <Contact/>
-  </div>
-  )
-}
+const App = () => {
+    return (
+        <Router>
+            <Layout/>
+                <Routes>
+                    <Route path="/" element={<Welcome />} />
+                    <Route path="/curriculum" element={<Curriculum />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/signup" element={<SignUp />} />
+                </Routes>
+        </Router>
+    );
+};
 
-export default App
+export default App;
