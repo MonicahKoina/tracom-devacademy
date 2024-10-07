@@ -8,15 +8,15 @@ const Navbar = () => {
         <img src={logo} alt="tracom" />
             <ul>
                 <li><Link to='/'>Home</Link></li>
-                <li><Link to={'/curriculum'}>Curriculum</Link></li>
+                <li><Link to="/curriculum">Curriculum</Link></li>
                 <li>Benefits</li>
-                <li><Link to={'/contact'}>Contact</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
             </ul>
             <div className="navigation-buttons">
-                <Link to={'/login'}>
+                <Link to='/login'>
                 <button className="nav-btn">Log In</button>
                 </Link>
-                <Link to={'/signup'}>
+                <Link to='/signup'>
                 <button className="nav-btn">Sign Up</button>
                 </Link>
             </div>

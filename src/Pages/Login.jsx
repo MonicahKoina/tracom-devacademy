@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [remember, setRemember] = useState(false);
+
+  const [loginvalue, setLoginValue] = useState({email:"", password:"", remember:false})
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Email:", email);
-    console.log("Password:", password);
-    console.log("Remember Me:", remember);
+    console.log(loginvalue); 
+    
   };
 
   return (
@@ -22,26 +20,26 @@ function Login() {
           type="email"
           id="email"
           placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
+          value={loginvalue.email}  
+          onChange={(e) => setLoginValue({... loginvalue, email:e.target.value})}
+
         />
         <label htmlFor="password">Password</label>
         <input
           type="password"
           id="password"
           placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
+          value={loginvalue.password}
+          onChange={(e) => setLoginValue({... loginvalue, password:(e.target.value)})}
+          />
         <label>
           <input
             type="checkbox"
             name="remember"
             id="remember"
-            checked={remember}
-            onChange={() => setRemember(!remember)}
+            checked={loginvalue.remember}
+            onChange={(e) => setLoginValue({... loginvalue, remember:e.target.value})}
+
           />
           <p>Remember me</p>
         </label>
